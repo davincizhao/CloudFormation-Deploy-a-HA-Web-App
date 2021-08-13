@@ -11,6 +11,18 @@ There are included :
 - README.md: this file 
 - create.bat: windows script for cloudformation create stack
 - update.bat: Windows script for cloudformation update stack
+### pre-requirement
+- Install AWS CLI tools
+- Create CLI user in IAM, and give permission to this user to create EC2, VPC, Loadbalancer...
+- Create and get "Access key","Secret access key" from IAM in AWS 
+- Quick configuration with aws configure
+```
+aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Default region name [None]: us-west-2
+Default output format [None]: json
+```
 
 
 ### 1. Network.yaml：
