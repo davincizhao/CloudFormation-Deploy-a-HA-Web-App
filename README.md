@@ -2,15 +2,15 @@
 The Deploy a high-availability web app using using Cloudformation 
 
 
-There are included 
-Network.yaml,
-network-params.json,
-ApacheServer.yaml,
-ApacheServer-params.json,
-VPC diagram.jpeg,
-README.md: this file 
-create.bat: windows script for cloudformation create stack
-update.bat: Windows script for cloudformation update stack
+There are included :
+- Network.yaml,
+- Network-params.json,
+- ApacheServer.yaml,
+- ApacheServer-params.json,
+- VPC diagram.jpeg,
+- README.md: this file 
+- create.bat: windows script for cloudformation create stack
+- update.bat: Windows script for cloudformation update stack
 
 
 ### 1. Network.yaml：
@@ -23,14 +23,14 @@ It creates the webservers which include the Load Balancer,
 AutoScaling Groups and Security Groups are created using 
 
 Instructions(Windows 10 )
-First create the network by running the create.bat file as below:
-
+- First create the network by running the create.bat file as below:
+```
 create.bat ApacheNetStack Network.yaml network-params.json
-
-Second Create the Web Stack by running the create file as shown below.
-
+```
+- Second Create the Web Stack by running the create file as shown below.
+```
 create.bat ApacheWebStack ApacheServer.yaml ApacheServer-params.json
-
+```
 ### 3. Finally go to "cloudformation"-->"Stacks"--"ApacheWebStack"--"Outputs",
 You can get the "LoadBalancerURL",copy the value into your webbrowser.
 You will see the website.
