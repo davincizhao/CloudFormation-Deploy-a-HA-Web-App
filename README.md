@@ -1,6 +1,7 @@
 ## Cloudformation: deploy a HA Web App(IaaC)
 The Deploy a high-availability web app using using Cloudformation 
-
+## Infrastructure Diagram On AWS
+![vpc](https://github.com/davincizhao/CloudFormation-Deploy-a-HA-Web-App/blob/master/VPC%20diagram.jpeg)
 
 There are included :
 - Network.yaml,
